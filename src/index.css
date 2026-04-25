@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+:root {
+  --col-white: #fff;
+  --col-blue: #4E598C;
+  --col-yellow: #F9C784;
+}
