@@ -21,7 +21,7 @@ function Game() {
     // Check if the card just clicked was clicked before
     const cardClicked = newCardList.find((newCard) => newCard.id === cardId);
 
-    if (!cardClicked.isClicked) {
+    if (cardClicked && !cardClicked.isClicked) {
       setScore(score + 1);
       // Update clicked state of clicked card
       setCardList(newCardList.map((newCard) => {
@@ -60,7 +60,6 @@ function Game() {
           return <Card
             key={card.id}
             id={card.id}
-            isClicked={card.isClicked}
             imageURL={card.imageURL}
             setIsClicked={handleClick}
           />;

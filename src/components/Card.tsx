@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export type CardData = {
   id: string,
-  isClicked: boolean;
+  isClicked?: boolean,
   imageURL: string,
 };
 
@@ -10,8 +10,7 @@ type SetIsClickedType = (id: string) => void;
 
 type CardProps = CardData & { setIsClicked: SetIsClickedType; };
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function Card({ id, isClicked, imageURL, setIsClicked }: CardProps) {
+function Card({ id, imageURL, setIsClicked }: CardProps) {
   const [avatar, setAvatar] = useState<string>("");
 
   useEffect(() => {
