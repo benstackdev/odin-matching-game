@@ -1,7 +1,13 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --col-white: #fff;
-  --col-blue: #4E598C;
-  --col-yellow: #F9C784;
+  --col-1: #E4DFDA;
+  --col-2: #8A817C;
+  --col-3: #BCB8B1;
+  --col-4: #463F3A;
+
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--col-4);
+  background-color: var(--col-1);
 }
